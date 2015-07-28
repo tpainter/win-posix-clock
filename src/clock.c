@@ -1,4 +1,5 @@
 /*
+ * Copyright (c) 2015, Travis Painter <travispainter@gmail.com>
  * Copyright (c) 2011, Dongsheng Song <songdongsheng@live.cn>
  *
  * Licensed to the Apache Software Foundation (ASF) under one or more
@@ -23,7 +24,7 @@
  */
 
 #include <stdio.h>
-#include <pthread_clock.h>
+#include <winposixclock.h>
 
 #include <winsock2.h>
 

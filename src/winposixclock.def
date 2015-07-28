@@ -1,4 +1,4 @@
-; dlltool --input-def winposixclock.def --output-lib winposixclock.dll.a
+; dlltool --input-def libpthread.def --output-lib winposixclock.dll.a
 LIBRARY winposixclock.dll
 EXPORTS
     nanosleep

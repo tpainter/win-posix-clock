@@ -1,4 +1,5 @@
 /*
+ * Copyright (c) 2015, Travis Painter <travispainter@gmail.com>
  * Copyright (c) 2011, Dongsheng Song <songdongsheng@live.cn>
  *
  * Licensed to the Apache Software Foundation (ASF) under one or more
@@ -17,11 +18,11 @@
  * limitations under the License.
  */
 
-#ifndef _PTHREAD_TYPES_H_
-#define _PTHREAD_TYPES_H_   1
+#ifndef _WINPOSIXCLOCK_TYPES_H_
+#define _WINPOSIXCLOCK_H_   1
 
 /**
- * @file pthread_types.h
+ * @file winposixclock_types.h
  * @brief POSIX Thread Support Definitions
  */
 
@@ -126,4 +127,4 @@ struct itimerspec {
 
 /** @} */
 
-#endif /* _PTHREAD_TYPES_H_ */
+#endif /* _WINPOSIXCLOCK_H_ */

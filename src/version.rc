@@ -23,11 +23,11 @@
 #define PT4W_VERSION_STRING "0, 1, 0, 0\0"
 
 #if defined(_MSC_VER)
-    #define PT4W_VERSIONINFO_COMMENT "POSIX thread for Windows - Microsoft C/C++ build\0"
+    #define PT4W_VERSIONINFO_COMMENT "POSIX clock for Windows - Microsoft C/C++ build\0"
 #elif defined(__GNUC__)
-    #define PT4W_VERSIONINFO_COMMENT "POSIX thread for Windows - GNU C build\0"
+    #define PT4W_VERSIONINFO_COMMENT "POSIX clock for Windows - GNU C build\0"
 #else
-    #define PT4W_VERSIONINFO_COMMENT "POSIX thread for Windows\0"
+    #define PT4W_VERSIONINFO_COMMENT "POSIX clock for Windows\0"
 #endif
 
 VS_VERSION_INFO VERSIONINFO
@@ -47,9 +47,9 @@ BEGIN
             VALUE "FileDescription", PT4W_VERSIONINFO_COMMENT
             VALUE "ProductVersion", PT4W_VERSION_STRING
             VALUE "FileVersion", PT4W_VERSION_STRING
-            VALUE "InternalName", "libpthread.dll\0"
-            VALUE "OriginalFilename", "libpthread.dll\0"
-            VALUE "LegalCopyright", "Copyright 2011, Dongsheng Song.\0"
+            VALUE "InternalName", "winposixclock.dll\0"
+            VALUE "OriginalFilename", "winposixclock.dll\0"
+            VALUE "LegalCopyright", "Copyright 2015, Travis Painter and Copyright 2011, Dongsheng Song.\0"
         END
     END
     BLOCK "VarFileInfo"

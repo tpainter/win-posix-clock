@@ -1,31 +1,22 @@
-    POSIX thread library for windows XP/2003 or later
+    POSIX clock functions for Windows
+    https://github.com/tpainter/win-posix-clock
 
 == Goals
-  * Simple
-  * Performance
-  * Because these 2 above goals, libpthread will not completely
-    conform to POSIX standard, only provide a reasonable behavior.
+The goal of this project is to provide the posix clock functions listed below:
+  nanosleep
+  clock_getres
+  clock_gettime
+  clock_settime
+  clock_nanosleep
 
-== Source
+These functions compliment the typical pthreads-win32 library found here:
+https://www.sourceware.org/pthreads-win32/
+
+
+
+== Original Source forked from:
   * Web View: http://github.com/songdongsheng/libpthread
   * git clone git://github.com/songdongsheng/libpthread.git
 
-or
-
-  * Web View: http://code.google.com/p/libpthread/source/browse/
-  * git clone https://code.google.com/p/libpthread
-
-== Important
-If you want pthread_rwlock_* and pthread_cond_* support, please
-compiled for Windows Vista/Server 2008 or later.
-
-== Requirements
-Following programs are requred to build:
-  - CMake 2.8 or later
-
-  - The source files can only be compiled by MSVC, ICC or GCC:
-    * Microsoft Visual C++ 2010 (Service Pack 1 or later)
-    * Microsoft Visual C++ 2012 (Update 1 or later)
-    * Intel C++ Compiler XE 2011 (v12.1 Update 7 or later)
-    * Intel C++ Compiler XE 2013 (v13.0 Update 1 or later)
-    * MinGW-w64 gcc 4.7 (4.7.2 or later)
+The original libpthread appears to be an incomplete pthreads implimentation, but it does
+include the clock functions missing in the pthreads-win32 library.

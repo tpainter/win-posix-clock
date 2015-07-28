@@ -1,4 +1,5 @@
 /*
+ * Copyright (c) 2015, Travis Painter <travispainter@gmail.com>
  * Copyright (c) 2011, Dongsheng Song <songdongsheng@live.cn>
  *
  * Licensed to the Apache Software Foundation (ASF) under one or more
@@ -17,11 +18,11 @@
  * limitations under the License.
  */
 
-#ifndef _PTHREAD_CLOCK_H_
-#define _PTHREAD_CLOCK_H_   1
+#ifndef _WINPOSIXCLOCK_H_
+#define _WINPOSIXCLOCK_H_   1
 
 /**
- * @file pthread_clock.h
+ * @file winposixclock.h
  * @brief POSIX Time Routines
  */
 
@@ -30,7 +31,7 @@
  * @{
  */
 
-#include <pthread_types.h>
+#include <winposixclock_types.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -91,4 +92,4 @@ int clock_nanosleep(clockid_t clock_id, int flags,
 
 /** @} */
 
-#endif /* _PTHREAD_CLOCK_H_ */
+#endif /* _WINPOSIXCLOCK_H_ */
